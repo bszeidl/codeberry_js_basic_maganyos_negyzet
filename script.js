@@ -1,7 +1,13 @@
 function pageLoaded () {
     var canvas = document.getElementById('myCanvas');
     var context = canvas.getContext('2d');
-    context.fillRect(175,100,100,100);  
+
+    let size = 100;
+    let padding = 10;
+    let canvasWidth = canvas.width;
+    let canvasHeight = canvas.height;
+    context.fillStyle = 'green';
+    context.fillRect(canvasWidth - size -padding,canvasHeight - size -padding,size,size);  
 
 }
 
